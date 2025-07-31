@@ -266,6 +266,24 @@
                 font-size: 2rem;
             }
         }
+        .location-img {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
+        .location-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .location-img:hover img {
+            transform: scale(1.03);
+        }
     </style>
 </head>
 <body>
@@ -294,10 +312,8 @@
             </div>
         </div>
         
-        <div class="">
-        <div class="https://github.com/GTX-xr/gtx-xr.github.io/blob/main/location.jpg">
+        <div class="location-img">
             <img src="https://github.com/GTX-xr/gtx-xr.github.io/blob/main/location.jpg">
-        
         </div>
         
         <h2>领军人物</h2>
