@@ -251,7 +251,6 @@
             color: #ffd700;
         }
         
-        /* 响应式设计 */
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2.5rem;
@@ -282,7 +281,7 @@
         </div>
         
         <div class="days-counter">
-            <h3>我们已毕业</h3>
+            <h3>组织已潜伏</h3>
             <div class="counter" id="daysCounter">0</div>
             <div class="counter-label">天</div>
             <p>自 2025年6月10日 起</p>
@@ -295,7 +294,7 @@
             </div>
         </div>
         
-        <div class="secret-img">
+        <div class="/gtx-xr.github.io/location.jpg">
             位置图片
         </div>
         
@@ -326,7 +325,7 @@
     </div>
     
     <script>
-        // 毕业天数计算器
+        
         function updateDaysCounter() {
             const graduationDate = new Date('2025-06-10');
             const now = new Date();
@@ -335,14 +334,14 @@
             document.getElementById('daysCounter').textContent = diffDays;
         }
         
-        // 页面加载时更新计数器
+        
         document.addEventListener('DOMContentLoaded', function() {
             updateDaysCounter();
             
-            // 每天更新一次计数器
+           
             setInterval(updateDaysCounter, 86400000); // 24小时
             
-            // 卡片动画效果
+            
             const cards = document.querySelectorAll('.class-card');
             cards.forEach((card, index) => {
                 card.style.animation = `fadeInUp 0.5s ease-out ${index * 0.2}s forwards`;
@@ -350,7 +349,7 @@
                 card.style.transform = 'translateY(20px)';
             });
             
-            // 添加样式
+            
             const style = document.createElement('style');
             style.innerHTML = `
                 @keyframes fadeInUp {
